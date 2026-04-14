@@ -119,10 +119,16 @@ footer {
     padding: 1rem;
 }
 
+.formulario-contenedor {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
 .formulario {
+    flex: 1;
     background-color: #e8e8e8;
     padding: 2rem;
-    margin: 2rem 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border: 2px solid #577592;
@@ -167,6 +173,32 @@ footer {
     margin: 0 auto;
 }
 
+.tarjeta-destacada {
+    background-color: #577592;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-destacada img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 400px;
+}
+
+.tarjeta-destacada p {
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 .redes {
     list-style: none;
     display: flex;
@@ -204,5 +236,9 @@ footer {
 
     .formulario {
         padding: 1rem;
+    }
+
+    .formulario-contenedor {
+        flex-direction: column;
     }
 }
